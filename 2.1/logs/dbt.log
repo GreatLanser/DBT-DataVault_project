@@ -1,0 +1,25 @@
+
+
+============================== 2023-01-12 13:15:23.644031 | bbdb4009-010a-4b40-a11a-a51b2d1cda46 ==============================
+13:15:23.644031 [info ] [MainThread]: Running with dbt=1.1.0
+13:15:23.644732 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\vbassarab\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+13:15:23.644732 [debug] [MainThread]: Tracking: tracking
+13:15:23.671648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277BDFED750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277BDFEC2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277BDFED6F0>]}
+13:15:44.946654 [debug] [MainThread]: Starter project path: C:\Users\vbassarab\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\include\starter_project
+13:15:47.341386 [info ] [MainThread]: 
+Your new dbt project "dbt_start" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+13:15:47.343382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277BDFEDE40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277BDFEE080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277BDFEE500>]}

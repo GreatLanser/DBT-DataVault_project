@@ -1,0 +1,49 @@
+name: 'dbt_start'
+version: '1.0.0'
+config-version: 2
+
+profile: 'dbt_postgres'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+vars:
+  load_date: '21.06.2017'
+  full_load: false
+
+models:
+  dbt_start:
+    raw_stage:
+      +schema: v_stage
+      tags:
+        - 'raw'
+      materialized: view
+    stage:
+      +schema: stage
+      tags:
+        - 'stage'
+      enabled: true
+      materialized: view
+    raw_vault:
+      +schema: raw_vault
+      tags:
+        - 'raw_vault'
+      materialized: incremental
+      hubs:
+        tags:
+          - 'hub'
+      links:
+        tags:
+          - 'link'
+      sats:
+        tags:
+          - 'satellite'
